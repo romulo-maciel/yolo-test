@@ -1,0 +1,6 @@
+path: jai_weed_detection/
+train: images/train
+val : images/val
+
+nc: 2  # number of classes
+names: ['grass', 'weed']

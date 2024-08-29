@@ -1,0 +1,10 @@
+# pyvenv folders
+bin/
+include/
+lib/
+lib64
+pyvenv.cfg 
+
+# huge datasets folder
+datasets/*
+
