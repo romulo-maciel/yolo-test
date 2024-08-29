@@ -47,7 +47,10 @@ def convert_coco_to_yolo(coco_json_path, output_dir):
 convert_coco_to_yolo("datasets/archive/train/_annotations.coco.json", "datasets/jai_weed_detection/labels/train")
 convert_coco_to_yolo("datasets/archive/test/_annotations.coco.json", "datasets/jai_weed_detection/labels/val")
 
+os.system("mkdir datasets/jai_weed_detection/images/train")
+os.system("mkdir datasets/jai_weed_detection/images/val")
+
 os.system("cp datasets/archive/train/*.jpg datasets/jai_weed_detection/images/train")
 os.system("cp datasets/archive/test/*.jpg datasets/jai_weed_detection/images/val")
 
-os.remove("datasets/archive")
+os.system("rm -rf datasets/archive")
