@@ -2,44 +2,42 @@
 
 To get started with the project, please follow the steps below:
 
-1. Create a Python virtual environment (venv) by running the following command in your terminal:
+1. Clone the repository:
 
     ```shell
-    python3 -m venv myenv
+    git clone https://github.com/romulo-maciel/yolo-test.git
     ```
 
-2. Activate the virtual environment:
+2. Create a Python virtual environment (venv):
 
-    - For Windows:
+    ```shell
+    python3 -m venv .
+    ```
 
-      ```shell
-      myenv\Scripts\activate
-      ```
-
-    - For macOS/Linux:
+3. Activate the virtual environment:
 
       ```shell
-      source myenv/bin/activate
+      source bin/activate
       ```
 
-3. Download the dataset zip file from [here](https://www.kaggle.com/datasets/jaidalmotra/weed-detection/data) and unzip it to the `datasets/archive/` directory.
+4. Download the dataset zip file from [here](https://www.kaggle.com/datasets/jaidalmotra/weed-detection/data) and unzip it to the `datasets/archive/` folder.
 
-4. Install the required dependencies by running the following command:
+5. Install the required dependencies:
 
     ```shell
     pip install ultralytics
     ```
 
-5. Run the setup script:
+6. Run the setup script:
 
     ```shell
     python setup.py
     ```
 
-6. Train the YOLO model by running the following command:
+7. Train the YOLO model:
 
     ```shell
     yolo train model=models/yolov8n.pt data=plants.yaml epochs=50
     ```
 
-That's it! You are now ready to train the YOLO model using the provided dataset. Happy coding!
+That's it
